@@ -1,0 +1,27 @@
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+ char ch,m, str[100];
+ clrscr();
+ printf("Enter String : ");
+ gets(str);
+ printf("write position you want to captalize : ");
+ scanf("%d",&m);
+ ch = str[m-1];
+ ch=ch-32;
+ str[m-1]=ch;
+ puts(str);
+ printf("%s",str);
+ getch();
+ return 0;
+ }
+
+OUTPUTS :
+
+Enter String : mayank
+write position you want to captalize : 2
+mAyank
+
+
